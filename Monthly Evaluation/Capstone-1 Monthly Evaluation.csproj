@@ -1,0 +1,240 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9DD84C91-5BB2-411F-B9EA-0E0457394B4B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Capstone_1_Monthly_Evaluation</RootNamespace>
+    <AssemblyName>Capstone-1 Monthly Evaluation</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44364</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminFacultyEvaluations.aspx" />
+    <Content Include="AdminStudentEvaluation.aspx" />
+    <Content Include="FacultyEvalPage.aspx" />
+    <Content Include="FacultyEvalReadOnly.aspx" />
+    <Content Include="FacultyEvalSubmit.aspx" />
+    <Content Include="FacultyEval_Landing.aspx" />
+    <Content Include="imgs\belltower.jpg" />
+    <Content Include="imgs\blank-profile-picture.png" />
+    <Content Include="imgs\doctor.jpg" />
+    <Content Include="imgs\med_student1.jpg" />
+    <Content Include="imgs\med_student2.jpg" />
+    <Content Include="imgs\med_student3.jpg" />
+    <Content Include="imgs\stickfigure1.png" />
+    <Content Include="imgs\stickfigure2.jpg" />
+    <Content Include="imgs\temple-logo.ico" />
+    <Content Include="imgs\temple-podiatric.png" />
+    <Content Include="imgs\temple-u.png" />
+    <Content Include="imgs\tu-hospital.jpg" />
+    <Content Include="StudentEvalReadOnly.aspx" />
+    <Content Include="StudentEvalPage.aspx" />
+    <Content Include="StudentEvalSubmit.aspx" />
+    <Content Include="StudentEval_LandingPage.aspx" />
+    <Content Include="styles.css" />
+    <Content Include="stylesMobile.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin-Master.Master.cs">
+      <DependentUpon>Admin-Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin-Master.Master.designer.cs">
+      <DependentUpon>Admin-Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminFacultyEvaluations.aspx.cs">
+      <DependentUpon>AdminFacultyEvaluations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminFacultyEvaluations.aspx.designer.cs">
+      <DependentUpon>AdminFacultyEvaluations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminStudentEvaluation.aspx.cs">
+      <DependentUpon>AdminStudentEvaluation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminStudentEvaluation.aspx.designer.cs">
+      <DependentUpon>AdminStudentEvaluation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty-Master.Master.cs">
+      <DependentUpon>Faculty-Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Faculty-Master.Master.designer.cs">
+      <DependentUpon>Faculty-Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="FacultyEvalPage.aspx.cs">
+      <DependentUpon>FacultyEvalPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FacultyEvalPage.aspx.designer.cs">
+      <DependentUpon>FacultyEvalPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FacultyEvalReadOnly.aspx.cs">
+      <DependentUpon>FacultyEvalReadOnly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FacultyEvalReadOnly.aspx.designer.cs">
+      <DependentUpon>FacultyEvalReadOnly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FacultyEvalSubmit.aspx.cs">
+      <DependentUpon>FacultyEvalSubmit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FacultyEvalSubmit.aspx.designer.cs">
+      <DependentUpon>FacultyEvalSubmit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FacultyEval_Landing.aspx.cs">
+      <DependentUpon>FacultyEval_Landing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FacultyEval_Landing.aspx.designer.cs">
+      <DependentUpon>FacultyEval_Landing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student-Master.Master.cs">
+      <DependentUpon>Student-Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student-Master.Master.designer.cs">
+      <DependentUpon>Student-Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="StudentEvalReadOnly.aspx.cs">
+      <DependentUpon>StudentEvalReadOnly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentEvalReadOnly.aspx.designer.cs">
+      <DependentUpon>StudentEvalReadOnly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentEvalPage.aspx.cs">
+      <DependentUpon>StudentEvalPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentEvalPage.aspx.designer.cs">
+      <DependentUpon>StudentEvalPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentEvalSubmit.aspx.cs">
+      <DependentUpon>StudentEvalSubmit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentEvalSubmit.aspx.designer.cs">
+      <DependentUpon>StudentEvalSubmit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentEval_LandingPage.aspx.cs">
+      <DependentUpon>StudentEval_LandingPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentEval_LandingPage.aspx.designer.cs">
+      <DependentUpon>StudentEval_LandingPage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin-Master.Master" />
+    <Content Include="Faculty-Master.Master" />
+    <Content Include="Student-Master.Master" />
+    <Content Include="Monthly-Evaluation-Template.xlsx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64516</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44364/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,332 @@
+﻿
+html, body {
+    font-family: 'Lora', serif;
+    font-weight: 500;
+}
+
+.h1, .h2, .h3 {
+    font-weight: 700;
+}
+
+.banner {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 20%, rgba(179,80,80,1) 32%, rgba(139,0,0,1) 44%, rgba(45,0,0,1) 100%);
+    height: 120px;
+}
+
+.banner-image {
+    background-color: white;
+    padding: 1%;
+    height: 100%;
+}
+
+.signInHeader {
+    background-color: crimson;
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-image {
+    background-color: white;
+    padding: 1%;
+    height: 100%;
+}
+
+.header-image-sign-in {
+    background-color: white;
+    padding: 1%;
+    margin-left: 5%;
+    width: 15%;
+}
+
+.clear {
+    clear: both;
+}
+
+nav {
+    /*position: fixed !important;*/
+}
+
+.navbar {
+    /*position: absolute !important;*/
+    width: 100%;
+}
+
+.backgroundSignIn {
+    position: fixed;
+}
+
+.btnSignIn {
+    font-size: 16pt;
+}
+
+.card-place {
+    position: relative;
+    padding-top: 300px;
+    width: 10%;
+    text-align: center;
+    margin-left: 800px;
+}
+
+.body-card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-position {
+    margin-top: 300px;
+}
+
+.side-image {
+    width: 100%;
+}
+
+.welcome {
+    background-color: #fffbed;
+    padding: 5%;
+    margin-top: 0%;
+    border-color: #9D2235;
+    border-width: 5px;
+    border-style: solid;
+}
+
+
+
+.absent-form {
+    margin-bottom: 5%;
+}
+
+
+
+.card {
+    border-color: #9D2235;
+    border-width: 5px;
+    background-color: #f7f2f2;
+}
+
+
+.adminUploadHeader {
+    font-family: 'Lora', serif;
+    font-weight: 900;
+    font-size: 50px;
+    color: rgba(45,0,0,1);
+    height: 75px;
+}
+
+
+.uploadButton {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #9D2235;
+    padding: 20px;
+    border-radius: 50px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    width: 100%;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: large;
+}
+
+    .uploadButton:hover {
+        background: #FFCD00;
+        letter-spacing: 1px;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.4s ease 0s;
+    }
+
+
+
+
+
+.adminCard {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonGridviewMargin {
+    margin-bottom: 25px;
+}
+
+
+
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+
+.cardSchedule {
+    margin: 5px 5px;
+    text-align: center;
+}
+
+.cardRotation {
+    font-size: 18px;
+    text-align: center;
+}
+
+td {
+    cursor: pointer !important;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    max-width: 95%;
+}
+
+
+.btn-warning {
+    color: black !important;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+}
+
+    .btn-warning:hover {
+        color: white !important;
+        border-color: #9D2235 !important;
+        background-color: #9D2235 !important;
+    }
+
+
+
+.GridPager {
+    background-color: #9D2235 !important;
+}
+
+
+    .GridPager table > tbody {
+        background-color: white;
+    }
+
+    .GridPager a, .GridPager span {
+        display: block;
+        height: 30px;
+        width: 30px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        font-size: large;
+        border-radius: 5px;
+    }
+
+    .GridPager a {
+        background-color: #FFCD00;
+        color: #000;
+        border: 1px solid black;
+    }
+
+    .GridPager span {
+        background-color: #9D2235;
+        color: white;
+        border: 1px solid black;
+    }
+
+    .GridPager a:hover:not(.active) {
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+    }
+
+
+.uploadButtonSmallest {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #9D2235;
+    padding: 10px;
+    border-radius: 50px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    width: 100%;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: large;
+}
+
+    .uploadButtonSmallest:hover {
+        background: black;
+        letter-spacing: 1px;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.4s ease 0s;
+    }
+
+.jumbotron {
+    font-size: 60px;
+    color: white;
+    background-color: #9D2235;
+    border-color: #9D2235;
+    border-width: 5px;
+    border-style: solid;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 0;
+    border-radius: 0px;
+}
+
+.schedulesJumbo {
+    background-color: #fffbed;
+    border-color: #9D2235;
+    border-width: 5px;
+    border-style: solid;
+    margin-bottom: 10px;
+}
+
+
+
+
+.btnLogout {
+    color: rgba(0,0,0,.5);
+    border-radius: 50px;
+}
+
+    .btnLogout:hover {
+        background-color: #9D2235;
+        color: white;
+    }
+
+
+.radio-toolbar input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.radio-toolbar label {
+    margin-right: 20px;
+    display: inline-block;
+    background-color: #9D2235;
+    padding: 10px 20px;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    border: 2px solid #FFCD00;
+    border-radius: 4px;
+    color: white;
+    font-weight: 700;
+}
+
+.radio-toolbar input[type="radio"]:checked + label {
+    background-color: #FFCD00;
+    color: black;
+    border-color: black;
+}
+
+.radio-toolbar input[type="radio"]:focus + label {
+    border: 2px dashed black;
+}
